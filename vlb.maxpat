@@ -104,7 +104,7 @@
 				"box" : 				{
 					"comment" : "RampTime(0. 10000.)",
 					"id" : "obj-18",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -117,7 +117,7 @@
 				"box" : 				{
 					"comment" : "PeakVol(-70. 6.)",
 					"id" : "obj-17",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -130,7 +130,7 @@
 				"box" : 				{
 					"comment" : "Toggle(0,1)",
 					"id" : "obj-16",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -196,8 +196,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 282.0, 349.0, 66.0, 22.0 ],
-					"text" : "$1, -70. $2"
+					"patching_rect" : [ 282.0, 349.0, 53.0, 22.0 ],
+					"text" : ", -70. $2"
 				}
 
 			}
@@ -217,7 +217,7 @@
 							"parameter_exponent" : 5.0,
 							"parameter_initial" : [ 1000 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "rampTime[1]",
+							"parameter_longname" : "rampTime[2]",
 							"parameter_mmax" : 10000.0,
 							"parameter_shortname" : "rampTime",
 							"parameter_type" : 0,
@@ -245,7 +245,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ -12 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "peakVolume[1]",
+							"parameter_longname" : "peakVolume[2]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "peakVolume",
@@ -286,7 +286,7 @@
 					"presentation_rect" : [ -5.0, 0.0, 48.0, 154.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "volume[1]",
+							"parameter_longname" : "volume[2]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "volume",
@@ -304,7 +304,7 @@
 				"box" : 				{
 					"comment" : "AudioOut(mono)",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -316,7 +316,7 @@
 				"box" : 				{
 					"comment" : "AudioIn(mono)",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -482,25 +482,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-5" : [ "volume[1]", "volume", 0 ],
-			"obj-7" : [ "peakVolume[1]", "peakVolume", 0 ],
-			"obj-8" : [ "rampTime[1]", "rampTime", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }
